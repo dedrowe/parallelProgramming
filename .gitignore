@@ -1,0 +1,10 @@
+﻿################################################################################
+# Данный GITIGNORE-файл был автоматически создан Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/parallelProgramming/x64
+/x64
+/parallelProgramming/results
+/parallelProgramming/parallelProgramming.vcxproj.filters
+/parallelProgramming/parallelProgramming.vcxproj.user
