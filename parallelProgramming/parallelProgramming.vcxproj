@@ -123,6 +123,7 @@
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OpenMPSupport>true</OpenMPSupport>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -137,10 +138,18 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BasicMatrixMultiplier.cpp" />
+    <ClCompile Include="MatrixMultiplier.cpp" />
+    <ClCompile Include="OpenMPMatrixMultiplier.cpp" />
     <ClCompile Include="parallelProgramming.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="validator\main.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BasicMatrixMultiplier.h" />
+    <ClInclude Include="MatrixMultiplier.h" />
+    <ClInclude Include="OpenMPMatrixMultiplier.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
