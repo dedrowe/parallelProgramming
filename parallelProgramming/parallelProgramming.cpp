@@ -23,7 +23,7 @@ void write_statistics(std::string path, size_t* matrix_size_array, double* time_
 int main()
 {
     srand(time(0));
-    bool validating = false;
+    bool validating = true;
     size_t const arr_len = 6;
     size_t const multiplying_count = 100;
     size_t arr[] = { 10, 50, 100, 200, 500, 1000 };
